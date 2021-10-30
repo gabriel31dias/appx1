@@ -1,0 +1,74 @@
+
+<div class="container">
+
+    <div class="alert-message alert-message-success">
+                <h4>
+                  Successfully logged in
+                </h4>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                    Ipsum has been the industry's standard dummy text ever since the 1500s.<strong> strong
+                        message</strong>. <a href="http://www.jquery2dotnet.com/2013/07/cool-notification-css-style.html">
+                            Cool Notification Css Style</a></p>
+    </div>
+    <div class="row profile">
+		<div class="col-md-3">
+			<div class="profile-sidebar">
+				<!-- SIDEBAR USERPIC -->
+				<div class="profile-userpic">
+					<img style="width:50px;height:50px" src="https://secure.gravatar.com/avatar/3b6e40d8a242b1a01a8a7d20c1d16022?s=100&r=g&d=mm" class="img-responsive" alt="">
+				</div>
+				<!-- END SIDEBAR USERPIC -->
+				<!-- SIDEBAR USER TITLE -->
+				<div class="profile-usertitle">
+					<div class="profile-usertitle-name">
+						<%= session[:current_user]['name']%>
+					</div>
+                    <div class="profile-usertitle-name">
+						<%= session[:current_user]['email']%>
+					</div>
+					<div class="profile-usertitle-job">
+						Developer
+					</div>
+				</div>
+				<div class="profile-userbuttons">
+                    <%= link_to 'New Post', :newacount, class: "btn btn-success btn-sm"%>
+                    <%= link_to 'Exit', :logout, class: "btn btn-danger btn-sm"%>
+				</div>
+				<div class="profile-usermenu">
+					<ul class="nav">
+						<li class="active">
+							<a href="#">
+							<i class="glyphicon glyphicon-home"></i>
+							Overview </a>
+						</li>
+						<li>
+							<a href="#">
+							<i class="glyphicon glyphicon-user"></i>
+							Account Settings </a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+							<i class="glyphicon glyphicon-ok"></i>
+							Tasks </a>
+						</li>
+						<li>
+							<a href="#">
+							<i class="glyphicon glyphicon-flag"></i>
+							Help </a>
+						</li>
+					</ul>
+				</div>
+				<!-- END MENU -->
+			</div>
+		</div>
+		<div class="col-md-9">
+            <div class="profile-content">
+			   Your User's Actions...
+            </div>
+		</div>
+	</div>
+</div>
+
+<br>
+<br>
